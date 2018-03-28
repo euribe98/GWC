@@ -1,0 +1,78 @@
+/* horizontal nav bar */
+.navbar li {
+    /*remove the line breaks before and after each list item, to display them on one line*/
+    display: inline;
+  
+    /* add a white border between items */
+    /* border-right:1px solid white; */
+  
+    font-family: 'Pacifico', cursive;
+}
+
+/* don't include border for the last item */
+.navbar li:last-child {
+    border-right: none;
+}
+
+/* spacing/padding and color for links */
+.navbar a {
+    color: white; 
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    /*padding: 8px; */
+}
+
+/* navbar hover color for inactive links */
+/* .navbar li a:hover:not(.active) {
+    background-color: black;
+}*/
+
+
+/* set color for the active page */
+.navbar li.active   {
+    background-color: green;
+} 
+
+
+/* navbar hover color for active links */
+.navbar li a:hover {
+    background-color: black;
+}
+
+
+/* remove bullets from unordered list and make the items blue */
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* background-color: blue; */
+}
+
+/* set headings font */
+h1, h2, h3, h4, h5, h6{ 
+  font-family: 'Pacifico', cursive;
+  font-size: 20px;
+}
+
+/* set body fonts and background image */
+body{
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 20px;
+  background:url("https://images.pexels.com/photos/235994/pexels-photo-235994.jpeg");
+  background-size:100%;
+}
+
+/* set header background image */
+header {
+  color: white; 
+  width: 100%; 
+  background:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTru6AeFWMMXbuv3OH7Nf4rI4_mZ8N1WpYTXx8jR0Cyvi2TQ2Mw');
+}
+
+
+
+
+
+

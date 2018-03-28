@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page 3</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+    <!-- jquery library -->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+    <header>
+      <center><h1>Advanced Topics</h1></center>
+      <!-- navigation bar. Include an external html for navigation using jquery -->
+      <div id="navbar"></div>
+      <script>
+         $(function(){
+           $("#navbar").load("nav.html");
+         }); 
+      </script>
+  </header>
+
+<!-- form examples -->
+<h3>Some random form</h3>
+<p><strong>Note:</strong> It looks the part, but won't do a thing.</p>
+
+<form action="somescript.php" method="post">
+    <strong>Name:</strong><br>
+    <input name="name" value="Your name"><br>
+    <strong>Comments:</strong><br>
+    <textarea rows="10" cols="20" name="comments">Your comments</textarea><br>
+    <strong>Are you:</strong><br>
+    <input type="radio" name="areyou" value="male"> Male<br>
+    <input type="radio" name="areyou" value="female"> Female<br>
+    <input type="radio" name="areyou" value="other" checked> Asexual<br>
+    <input type="submit">
+</form>
+
+<!-- internal javascript  -->
+<p id="demo2">Internal JavaScript Test</p>
+<button type="button" onclick="myFunction2()">Try it</button>
+<script>
+    function myFunction2() {
+       document.getElementById("demo2").innerHTML = "Internal javascript executed.";
+    }
+</script>
+
+<!-- external javascript  -->
+<p id="demo">External JavaScript Test.</p>
+<button type="button" onclick="myFunction()">Try it</button>
+<script src="script.js"></script>
+
+</body>
+</html>

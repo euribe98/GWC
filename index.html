@@ -1,18 +1,67 @@
+<!-- this is a comment. It's not interpretted by the browser and is for you to
+self document -->
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>euribe98 website</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/styles.css">
-    <script src="/script.js" defer></script>
-  </head>
-  <body>
-    <h1>Welcome to euribe98's Website</h1>
-    <p>
-      My website on github pages<br>
-      <a href="https://github.com/euribe98">My github profile</a>
-    </p>
-  </body>
+  <!-- The <head> element can include a title for the document, scripts, styles, meta information, and more. -->
+<head>
+    <title>Html Example</title>
+    <!-- external css for styling -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- google fonts to be used -->
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+</head>
+    
+  
+ <!-- the body contains the content of your page. It's like a document where you use tags that define the layout, 
+  for example: headings, paragraphs, media such 
+  as images and sound, links to other pages and sites, etc..  -->  
+<body>
+  <!-- The <header> element represents a container for introductory content or a set of navigational links. 
+  You can have several <header> elements in one document. -->
+    <header>
+      <!-- h1 is the title, should just be 1 -->
+      <center><h1>HTML Basics</h1></center>
+      
+     <!-- navigation bar.  -->
+     <div class="navbar">
+        <ul>
+          <li class="active"><a href="index.html">Home</a></li>   
+          <li ><a href="page1.html">Formatting and Lists</a></li>
+          <li><a href="page2.html">Links, Images, Tables</a></li>
+          <li><a href="page3.html">Forms and Javascript</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+    </div>
+  </header>
+    
+   <!-- paragraph, us br tag for line feeds -->
+    <p> The body contains the content of your page. It's like a document where you <br>
+    use tags that define the layout, for example: headings, paragraphs, media such<br>
+    as images and sound, links to other pages and sites, etc.. Here, we use the "p" tag <br>
+    for paragraph. The "br" tag is for line breaks. Notice how "br" does not have a closing tag.</p>
+    
+    <p>This is a second pargraph. When using paragrphs, line breaks are added between paragraphs.<br>
+      Within a paragraph,if you want line breaks you can use "br". What would happen if you did<br> n
+      ot use "br"? If you want to preserve formatting without additional tags, you can use the "pre" tag. The <br> 
+      text inside pre is displayed in a fixed-width font (usually Courier), and it preserves both<br> 
+      spaces and line breaks. Following is an example.</p>
+    
+   <!-- everything in pre is displayed as is. Useful when showing code for example -->
+    <pre>
+Headings are a way to add a title and subtitles. There are 6 headings "h1" through "h6" 
+where "h1" is most important and "h6" is least important. Margins are automatically
+added before and after each heading. Note that the h1 tag is only used once, as the main
+heading of the page. h2 to h6 can be used as often as desired, but they should
+always be used in order.  Here is an example in action.</pre>
+    
+    <!-- heading tags -->
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+    
+</body>
 </html>
