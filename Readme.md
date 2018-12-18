@@ -2,4 +2,4 @@
 
 ## Purpose
 
-An example website with basic html, css and javascript syntax
+An example website with basic html, css and javascript syntax. Used to teach web development for my Girls Who Code club
